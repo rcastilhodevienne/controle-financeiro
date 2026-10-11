@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finanças da Família</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>💰 Controle Familiar</h1>
+        
+        <div class="saldo-card">
+            <h2>Saldo Atual</h2>
+            <h1 id="saldo-total">R$ 0,00</h1>
+        </div>
+
+        <div class="card">
+            <h2>Nova Transação</h2>
+            <div class="form-group">
+                <input type="text" id="descricao" placeholder="Ex: Conta de Luz">
+                <input type="number" id="valor" placeholder="Valor (R$)">
+                <select id="tipo">
+                    <option value="saida">🔴 Despesa (Saída)</option>
+                    <option value="entrada">🟢 Receita (Entrada)</option>
+                </select>
+                <button onclick="adicionarTransacao()">Salvar</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Histórico</h2>
+            <div id="lista-transacoes"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
