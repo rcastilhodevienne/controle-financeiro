@@ -1,0 +1,15 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+body { background-color: #f4f6f8; color: #333; padding: 20px; }
+.container { max-width: 500px; margin: 0 auto; }
+h1 { text-align: center; margin-bottom: 20px; }
+.card, .saldo-card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin-bottom: 20px; }
+.saldo-card { text-align: center; background: #2c3e50; color: white; }
+h2 { font-size: 16px; margin-bottom: 10px; color: inherit; }
+.form-group { display: flex; flex-direction: column; gap: 10px; }
+input, select { padding: 12px; border: 1px solid #ccc; border-radius: 8px; font-size: 16px; }
+button { background-color: #27ae60; color: white; border: none; padding: 12px; border-radius: 8px; font-size: 16px; font-weight: bold; cursor: pointer; }
+.item { display: flex; justify-content: space-between; align-items: center; padding: 12px; border-bottom: 1px solid #eee; }
+.item:last-child { border-bottom: none; }
+.entrada { color: #27ae60; font-weight: bold; }
+.saida { color: #e74c3c; font-weight: bold; }
+.btn-excluir { background: #e74c3c; padding: 5px 10px; font-size: 12px; width: auto; }
